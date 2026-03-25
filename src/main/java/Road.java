@@ -1,29 +1,14 @@
 public class Road {
-    private Localisation origine;
-    private Localisation destination;
-    private double distance;
-    private String nomRue;
+    private final Localisation destination;
+    private final double distance;
+    private final String streetName;
 
-    public Road(Localisation origine, Localisation destination, double distance, String nomRue) {
-        this.origine = origine;
+    public Road(Localisation destination, double distance, String streetName) {
         this.destination = destination;
         this.distance = distance;
-        this.nomRue = nomRue;
+        this.streetName = streetName;
     }
 
-    public Localisation getOrigine() {
-        return origine;
-    }
-
-    public Localisation getDestination() {
-        return destination;
-    }
-
-    public double getDistance() {
-        return distance;
-    }
-
-    public String getNomRue() {
-        return nomRue;
-    }
+    public Localisation getDestination() { return destination; }
+    public double getDistance() { return distance; }
 }
